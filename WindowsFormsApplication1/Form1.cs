@@ -31,7 +31,11 @@ namespace WindowsFormsApplication1 //namespace parang package. Package in java
 
 	        }
         
-            
+            //insert to database
+            User user = new User();
+            user.name = this.name; //user.name is from user class. this.name is from form1 class
+            user.contactNo = this.contactNo;
+            user.insert();
             
         }
 
