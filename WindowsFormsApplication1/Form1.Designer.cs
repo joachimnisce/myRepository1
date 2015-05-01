@@ -53,12 +53,14 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "&Delete";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(31, 46);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(195, 124);
@@ -86,7 +88,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

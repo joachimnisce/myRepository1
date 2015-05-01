@@ -34,6 +34,23 @@ namespace WindowsFormsApplication1 //namespace parang package. Package in java
             
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //check if there's a selected value in the lisgtview
+            //loop through the number of eelected items
+            //delete one by one
+
+            if (listView1.SelectedItems.Count > 0) //may laman
+            {
+                for (int i = 0; i < listView1.SelectedItems.Count; i++)
+                {
+                    listView1.SelectedItems[0].Remove();
+                    //0 because the indices change to zero. moving indices.
+                }
+            }
+        }
         
     }
+    
 }
