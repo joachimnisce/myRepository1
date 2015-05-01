@@ -48,6 +48,7 @@ namespace WindowsFormsApplication1 //namespace parang package. Package in java
                     listView1.SelectedItems[0].Remove();
                     //0 because the indices change to zero. moving indices.
                 }
+                //kim
             }
         }
         
